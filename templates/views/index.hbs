@@ -1,0 +1,65 @@
+<html lang="en" style="background-color: #ddd">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- <link rel="stylesheet" href="./css/style.css" /> -->
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<!-- <link type="text/css" href="./css/site.css" rel="stylesheet">
+      <link type="text/css" href="./css/style2020.css" rel="stylesheet">
+      <link type="text/css" href="./css/quotes7.css" rel="stylesheet"> -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Quotes Generator</title>
+	</head>
+	<body class="index_body">
+		<div
+			id="content_page"
+			class="content container"
+			style="margin-top: 2rem; border-radius: 6px"
+		>
+			<h1 class="web_title"><b>Random Quotes Generator</b><br /><br /></h1>
+			<span id="hidetitle">
+				<input type="hidden" name="hidetitle" value="page1" />
+			</span>
+
+			<section id="bottom_level">
+				<!-- <form action="./quotes_index2.php" method="post"> -->
+				<form action="./begin" method="post">
+					<div id="bottom_left">
+						<h2>Select Quote Category</h2>
+						<input type="radio" name="quoteCategory" value="05" id="level5" />
+						<label for="level5">
+							<span class="lvlnum">The Bible </span></label><br />
+						<input type="radio" name="quoteCategory" value="03" id="level3" />
+						<label for="level3">
+							<span class="lvlnum">Random Humor</span></label><br />
+						<input
+							type="radio"
+							name="quoteCategory"
+							value="04"
+							checked="checked"
+							id="level4"
+						/>
+						<label for="level4">
+							<span class="lvlnum">Literary & Famous </span></label><br />
+						<input type="radio" name="quoteCategory" value="01" id="level1" />
+						<label for="level1">
+							<span class="lvlnum">The Onion horoscopes</span></label><br />
+					</div>
+					<br />
+					<div id="buttons">
+						<label>&nbsp;</label>
+						<input id="startQuotes" type="submit" name="action" value="Start" />
+						<br /><br /><br />
+					</div>
+				</form>
+			</section>
+		</div>
+
+		<script src="/js/index.js"></script>
+		<!---ved to end so that this doesn't run until all our elements are available -->
+	</body>
+</html>

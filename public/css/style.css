@@ -1,0 +1,194 @@
+/***************************************************************************************
+**   Page 1 -- Quotes Home page  
+***************************************************************************************/
+.hideme {
+	display: none;
+}
+
+.web_title {
+	color: #191970;
+	font-size: 120%;
+	padding: 1.5em 0 0.25em;
+	text-align: center;
+}
+
+html,
+body {
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	color: #222;
+}
+
+body {
+	background-color: #ddd;
+}
+body.index_body {
+	padding-top: 1em;
+}
+
+/* body {
+	height: 1000px;
+} */
+#content_page {
+	/* id = "content_page" is for the body of the web page */
+	font-family: Helvetica, Arial, sans-serif; /* fonts for body of web page */
+	font-size: 87.5%;
+	margin: 0 auto;
+	border: 2px solid black; /* border for web page body */
+	margin-top: 3rem;
+	background-color: #fcfcfc; /* light gray */
+}
+
+#bottom_level {
+	border-top: 3px solid black;
+	padding: 1em 2em;
+	margin: 0em 2em;
+	clear: both;
+}
+
+#bottom_level h2 {
+	color: #800000;
+	font-size: 100%;
+	font-weight: bold;
+	padding: 0.2em 0em 0.7em;
+}
+
+#bottom_left .lvlnum {
+	font-weight: bold;
+}
+
+#bottom_left input {
+	margin-left: 2em;
+	margin-right: 1em;
+	margin-top: 0.5em;
+}
+
+#buttons input {
+	/* Calculate button */
+	margin-left: 20em;
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+	border: 4px solid #000000;
+	width: 9em;
+}
+
+/***************************************************************************************
+**   Page 2 -- Quotes Display
+***************************************************************************************/
+html body {
+	background-color: black !important;
+	font-family: "times new roman", serif;
+}
+
+.exitinfo {
+	margin-top: 20px;
+	font-size: 90%;
+	color: orange;
+	text-align: center;
+}
+
+div.hidequoteline {
+	display: none;
+}
+.hidequote {
+	color: white;
+	display: none;
+}
+.hideauthor {
+	color: blue;
+	display: none;
+}
+.hideextra {
+	color: white;
+	display: none;
+}
+#hideexitbutton {
+	display: none;
+}
+#hideoption {
+	display: none;
+}
+#hideoption33 {
+	color: white;
+}
+
+#quote_section {
+	/*	margin: 120px 100px 30px 100px; */
+	margin: 12% 15% 5% 15%;
+	background-color: black;
+}
+
+#quote_section .prequote {
+	font-size: 1.7rem;
+	color: #888;
+	display: block !important;
+}
+
+#quote_section .quote {
+	font-size: 2rem;
+	color: white;
+}
+#quote {
+	font-size: 2rem;
+}
+
+#quote_section .author {
+	margin-left: 2rem;
+	font-size: 1.3rem;
+	color: teal;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.arrows {
+	font-size: 3rem;
+	color: #bbb;
+	position: absolute;
+	width: 100%;
+	padding: 0 2rem;
+	top: 49%;
+}
+div.left_arrow {
+	float: left;
+}
+
+div.right_arrow {
+	float: right;
+}
+
+div.invisible_middle {
+	position: absolute;
+	bottom: 0%;
+	left: 10%;
+	width: 75%;
+	/* margin: 0 auto; */
+	height: 100%;
+}
+
+div.pause_section {
+	font-size: 4.5rem;
+	color: #fff;
+	position: absolute;
+	bottom: 0%;
+	left: 49%;
+	margin: 0 auto;
+	opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+	#quote_section .quote {
+		font-size: 1.7rem;
+		color88: yellow;
+	}
+}
+@media (max-width: 800px) {
+	#quote_section .prequote {
+		font-size: 1.4rem;
+	}
+}
+@media (max-width: 800px) {
+	#quote_section .author {
+		font-size: 1.1rem;
+		color88: green;
+	}
+}
