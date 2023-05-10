@@ -1,0 +1,31 @@
+// From UnPause - get more Quotes 
+		$.ajax({
+			url: "/next",
+			type: "POST",
+			contentType: "application/json",
+			data: JSON.stringify({ endIdx: qIndexes.endIdx }),
+			success: function (response) {
+				allQuoteFields = [];
+				addNewQuotes(response.tenQuotes);
+
+				currIndex = 0;
+//				delay = 0; 
+//				setTimeout(startLoop, delay, allQuoteFields, currIndex, numPauses);
+				startLoop(allQuoteFields, 0, numPauses);
+			},
+		});
+
+// From waitFn
+		$.ajax({
+			url: "/next",
+			type: "POST",
+			contentType: "application/json",
+			data: JSON.stringify({ endIdx: qIndexes.endIdx }),
+			success: function (response) {
+				allQuoteFields = [];
+				addNewQuotes(response.tenQuotes);
+				
+				if (pauseThis) return;
+				startLoop(allQuoteFields, 0, numPauses);
+			},
+		});

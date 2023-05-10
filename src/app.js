@@ -4,6 +4,8 @@ const express = require("express"); // express is a function (as opposed to an o
 const hbs = require("hbs");
 const bodyParser = require("body-parser");
 
+const LOOKBACK_TOTAL = 20;   // number of quotes prior to current selections to include (for left arrow select)
+
 const app = express(); // creates a new express application
 app.use(bodyParser.json());
 app.use(
@@ -19,6 +21,8 @@ const viewsPath = path.join(__dirname, "../templates/views"); // express default
 // const partialsPath = path.join(__dirname, "../templates/partials");
 
 var currData = { category: "04" };
+
+
 // Setup handlebars engine & views location
 app.set("view engine", "hbs"); // e.g. set up a view engine (handlebar) for Express
 app.set("views", viewsPath); // express default is 'views' folder for .hbs content;  this overrides that
@@ -28,19 +32,18 @@ app.set("views", viewsPath); // express default is 'views' folder for .hbs conte
 app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
+	console.log('MATCH to index'); 
 	res.render("index", {}); // allows us to render one of our views (one of the handlebar templates)
 });
 
 app.post("/begin", (req, res) => {
-	console.log("POST /begin");
-	console.log(req.body); // '01' Onion, '03' Humor , '04' Literary, '05 Bible
+	// console.log("POST /begin", req.body); // '01' Onion, '03' Humor , '04' Literary, '05 Bible
 	currData.quotes = readTextFile(req.body.quoteCategory);
 	formatQuotes(1); // 1 is to 'randomize' the order;  0 is keep in order
 
 	currData.ctr = 0;
-	console.log("Total quotes = ", currData.quotes.length);
 	var tenQuotes = getSample();
-	console.log("tenquotes = ", tenQuotes);
+	// console.log("tenquotes = ", tenQuotes);
 
 	res.render("results", {
 		tenQuotes,
@@ -54,25 +57,31 @@ app.post("/begin", (req, res) => {
 });
 
 app.post("/next", (req, res) => {
-	// console.log("POST /next", currData);
-	console.log("req.body = ", req.body); // '01' Onion, '03' Humor , '04' Literary, '05 Bible
-	console.log("currData.category");
-	let ctr = parseInt(req.body.endIdx);
-	console.log("NEXT ctr = ", ctr);
-	// console.log("currData.final curr = ", currData.final[ctr]);
-	// console.log("currData.final next = ", currData.final[ctr + 1]);
-	// currData.quotes = readTextFile(req.body.quoteCategory);
-	// formatQuotes(1); // 1 is to 'randomize' the order;  0 is keep in order
+	console.log("/next -- req.body = ", req.body); // '01' Onion, '03' Humor , '04' Literary, '05 Bible
+	// let ctr = parseInt(req.body.endIdx);
 
 	// currData.ctr = 0;
 	console.log("Total quotes = ", currData.final.length);
-	var tenQuotes = getSample();
+	var tmp_ctr = currData.ctr; 
+	var next_quotes = getSample();
+
+	old_quotes = []; 
+	if (tmp_ctr <= LOOKBACK_TOTAL) {
+		begin_ctr = 0; 
+		old_quotes = currData.final.slice(0, tmp_ctr);
+	}
+	var tenQuotes = old_quotes.concat(next_quotes); 
 	console.log("tenquotes = ", tenQuotes);
 
-	res.send({ tenQuotes: tenQuotes });
-	// res.send("results", {
-	// 	tenQuotes,
-	// });
+	res.send({
+		tenQuotes: tenQuotes, 
+		counters: {
+			begin: 0,
+			curr: tmp_ctr,
+			end: currData.ctr,
+			lastQuote: currData.ctr >= currData.final.length ? true : false,
+		},
+	});
 });
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
@@ -125,7 +134,7 @@ function formatQuotes(rand) {
 
 function getSample() {
 	var tmp_list = currData.final.slice(currData.ctr, currData.ctr + 3);
-	if (currData.ctr + 3 > currData.final.length) currData.ctr = 0;
+	if (currData.ctr + 3 > currData.final.length) currData.ctr = currData.final.length;
 	else currData.ctr = currData.ctr + 3;
 	return tmp_list;
 }
@@ -139,6 +148,7 @@ function readTextFile(str) {
 		if (str == "01") tmp_file = "files/onion2023.txt";
 		else if (str == "03") tmp_file = "files/humor2023.txt";
 		else if (str == "05") tmp_file = "files/bible2023.txt";
+		// else if (str == "05") tmp_file = "files/dummy.txt";
 		const dataBuffer = fs.readFileSync(tmp_file);
 		const dataArray = dataBuffer.toString("UTF8").split("\n");
 		return dataArray;
@@ -148,16 +158,6 @@ function readTextFile(str) {
 	}
 }
 
-// console.log("check 3");
-// // '*' match anything else that hasn't matched so far;  node starts at public directory check and works through app.get until it gets here
-app.get("*", (req, res) => {
-	console.log("No MATCH, req");
-	//    res.send('my 404 page');
-	res.render("404", {
-		title: "404 Page",
-		errorMsg: "Page not found.",
-	});
-});
 
 // To start the server up;  access this via localhost:3000 URL
 app.listen(port, () => {
