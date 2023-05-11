@@ -90,7 +90,9 @@ function ajaxMoreQuotes(action = '') {
 			allQuoteFields = [];
 			addNewQuotes(response.tenQuotes);
 			if (action == 'rt-click') {
-				currIndex += 1;
+				// currIndex += 1;
+				currIndex = response.counters.curr; 
+				console.log('AJAX More -- currIndex = ', currIndex); 
 				setQuote(currIndex);
 			} else {
 				// console.log("WW02 -- startLoop AFTER adding New Quotes");
@@ -145,6 +147,7 @@ function waitFn(pNum) {
 
 /* set the main quote based on the index provided */
 function setQuote(idx, ary = allQuoteFields) {
+	console.log('setQuote', idx, allQuoteFields); 
 	$("#quote_section .prequote").text(ary[idx]["prequote"]);
 	$("#quote_section .quote").text(ary[idx]["idx"] + " - " + ary[idx]["quote"]);
 	$("#quote_section .author").text(ary[idx]["author"]);

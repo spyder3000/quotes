@@ -68,16 +68,23 @@ app.post("/next", (req, res) => {
 	old_quotes = []; 
 	if (tmp_ctr <= LOOKBACK_TOTAL) {
 		begin_ctr = 0; 
-		old_quotes = currData.final.slice(0, tmp_ctr);
+		// old_quotes = currData.final.slice(0, tmp_ctr);
+	} else {
+		console.log('Subtract 20', tmp_ctr)
+		begin_ctr = tmp_ctr - LOOKBACK_TOTAL; 
 	}
+	old_quotes = currData.final.slice(begin_ctr, tmp_ctr);
+	console.log('old_quotes.length = ', old_quotes.length); 
+	console.log('old_quotes.length = ', next_quotes.length); 
 	var tenQuotes = old_quotes.concat(next_quotes); 
-	console.log("tenquotes = ", tenQuotes);
+	console.log("tenquotes.length = ", tenQuotes.length);
 
+	console.log('SEND -- curr = ', tmp_ctr, '; end = ', currData.ctr); 
 	res.send({
 		tenQuotes: tenQuotes, 
 		counters: {
 			begin: 0,
-			curr: tmp_ctr,
+			curr: old_quotes.length, // tmp_ctr,
 			end: currData.ctr,
 			lastQuote: currData.ctr >= currData.final.length ? true : false,
 		},
@@ -126,7 +133,7 @@ function formatQuotes(rand) {
 		currData.final.push(tmpobj);
 	}
 
-	if (rand == 1) shuffleArray(currData.final);
+	// if (rand == 1) shuffleArray(currData.final);
 	currData.final.forEach((element, index) => {
 		currData.final[index].idx = index;
 	});
