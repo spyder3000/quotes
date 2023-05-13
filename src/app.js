@@ -32,7 +32,7 @@ app.set("views", viewsPath); // express default is 'views' folder for .hbs conte
 app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
-	console.log('MATCH to index'); 
+	// console.log('MATCH to index'); 
 	res.render("index", {}); // allows us to render one of our views (one of the handlebar templates)
 });
 
@@ -57,11 +57,9 @@ app.post("/begin", (req, res) => {
 });
 
 app.post("/next", (req, res) => {
-	console.log("/next -- req.body = ", req.body); // '01' Onion, '03' Humor , '04' Literary, '05 Bible
-	// let ctr = parseInt(req.body.endIdx);
+	// console.log("/next -- req.body = ", req.body); // '01' Onion, '03' Humor , '04' Literary, '05 Bible
 
-	// currData.ctr = 0;
-	console.log("Total quotes = ", currData.final.length);
+	// console.log("Total quotes = ", currData.final.length);
 	var tmp_ctr = currData.ctr; 
 	var next_quotes = getSample();
 
@@ -70,16 +68,12 @@ app.post("/next", (req, res) => {
 		begin_ctr = 0; 
 		// old_quotes = currData.final.slice(0, tmp_ctr);
 	} else {
-		console.log('Subtract 20', tmp_ctr)
+		// console.log('Subtract 20', tmp_ctr)
 		begin_ctr = tmp_ctr - LOOKBACK_TOTAL; 
 	}
 	old_quotes = currData.final.slice(begin_ctr, tmp_ctr);
-	console.log('old_quotes.length = ', old_quotes.length); 
-	console.log('old_quotes.length = ', next_quotes.length); 
 	var tenQuotes = old_quotes.concat(next_quotes); 
-	console.log("tenquotes.length = ", tenQuotes.length);
 
-	console.log('SEND -- curr = ', tmp_ctr, '; end = ', currData.ctr); 
 	res.send({
 		tenQuotes: tenQuotes, 
 		counters: {
@@ -93,6 +87,7 @@ app.post("/next", (req, res) => {
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
 function shuffleArray(array) {
+	console.log('shuffleArray', array.length)
 	for (var i = array.length - 1; i > 0; i--) {
 		var j = Math.floor(Math.random() * (i + 1));
 		var temp = array[i];
@@ -133,29 +128,29 @@ function formatQuotes(rand) {
 		currData.final.push(tmpobj);
 	}
 
-	// if (rand == 1) shuffleArray(currData.final);
+	if (rand == 1) shuffleArray(currData.final);
 	currData.final.forEach((element, index) => {
 		currData.final[index].idx = index;
 	});
 }
 
 function getSample() {
-	var tmp_list = currData.final.slice(currData.ctr, currData.ctr + 3);
-	if (currData.ctr + 3 > currData.final.length) currData.ctr = currData.final.length;
-	else currData.ctr = currData.ctr + 3;
+	var tmp_list = currData.final.slice(currData.ctr, currData.ctr + 30);
+	if (currData.ctr + 30 > currData.final.length) currData.ctr = currData.final.length;
+	else currData.ctr = currData.ctr + 30;
 	return tmp_list;
 }
 
 // '01' Onion, '03' Humor , '04' Literary, '05 Bible
 function readTextFile(str) {
-	console.log("choice = ", str);
+	// console.log("choice = ", str);
 	try {
 		currData.category = str;
 		tmp_file = "files/famous2023.txt";
 		if (str == "01") tmp_file = "files/onion2023.txt";
 		else if (str == "03") tmp_file = "files/humor2023.txt";
-		else if (str == "05") tmp_file = "files/bible2023.txt";
-		// else if (str == "05") tmp_file = "files/dummy.txt";
+		// else if (str == "05") tmp_file = "files/bible2023.txt";
+		else if (str == "05") tmp_file = "files/dummy.txt";
 		const dataBuffer = fs.readFileSync(tmp_file);
 		const dataArray = dataBuffer.toString("UTF8").split("\n");
 		return dataArray;

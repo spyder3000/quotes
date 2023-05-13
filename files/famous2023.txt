@@ -28,13 +28,13 @@ You must be the change you wish to see in the world.|Gandhi
 Courage is not the absence of fear but rather the judgment that something else is more important than fear.|Ambrose Redmoon
 All animals are equal but some animals are more equal than others.|George Orwell (Animal Farm)
 As the family goes, so goes the nation and so goes the whole world in which we live.|Pope John Paul II
+
 Your friend is the man who knows all about you and still likes you.|Elbert Hubbard
 I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones.|Albert Einstein
 The difference between stupidity and genius is that genius has its limits.|Albert Einstein
 I have no special talents.  I am only passionately curious.|Albert Einstein
 We must learn to live together as brothers or perish together as fools.|Martin Luther King Jr.
 I do not agree with what you have to say, but I'll defend to the death your right to say it.|Voltaire
-
 Beware of the man who works hard to learn something, learns it, and finds himself no wiser than before...  He is full of murderous resentment of people who are ignorant without having come by their ignorance the hard way. |Kurt Vonnegut (Cat's Cradle) ++2
 A foolish consistency is the hobgoblin of little minds.|Ralph Waldo Emerson (from Self-Reliance)
 Speak what you think now in hard words, and to-morrow speak what to-morrow thinks in hard words again, though it contradict every thing you said to-day.|Ralph Waldo Emerson (from Self-Reliance) ++1
@@ -45,7 +45,6 @@ All I have seen teaches me to trust the Creator for all I have not seen.|Ralph W
 The purpose of life is not to be happy.  It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.|Ralph Waldo Emerson ++1
 Simplicity, simplicity, simplicity!  I say, let your affairs be as two or three, and not a hundred or a thousand.|Henry David Thoreau (from Walden)
 If a man does not keep pace with his companions, perhaps it is because he hears a different drummer.  Let him step to the music which he hears, however measured or far away.|Henry David Thoreau (from Walden) ++1
-
 Was this the face that launched a thousand ships and burnt the topless towers of Ilium?|Christopher Marlowe (Doctor Faustus)
 He that loves pleasure must for pleasure fall|Christopher Marlowe (Doctor Faustus)
 Fools rush in where angels fear to tread|Alexander Pope
@@ -56,7 +55,6 @@ The true measure of a man is how he treats someone who can do him absolutely no 
 What is written without effort is in general read without pleasure|Samuel Johnson
 Patriotism is the last refuge of a scoundrel|Samuel Johnson
 Integrity without knowledge is weak and useless, and knowledge without integrity is dangerous and dreadful.|Samuel Johnson
-Do I contradict myself?  Very well then I contradict myself, (I am large, I contain multitudes)|Walt Whitman (Song of Myself)
 
 Whenever you find yourself on the side of the majority, it is time to pause and reflect.|Mark Twain
 The man who does not read has no advantage over the man who cannot read.|Mark Twain
@@ -71,21 +69,16 @@ Of all God's creatures, there is only one that cannot be made slave of the leash
 Speak when you are angry and you will make the best speech you will ever regret.|Ambrose Bierce
 There is nothing new under the sun but there are lots of old things we don't know.|Ambrose Bierce
 The most affectionate creature in the world is a wet dog.|Ambrose Bierce
-Love - A temporary insanity curable by marriage|Ambrose Bierce
 Sweater - Garment worn by child when its mother is feeling chilly|Ambrose Bierce
 Patience - A minor form of despair, disguised as a virtue|Ambrose Bierce
 Egotist - A person of low taste, more interested in himself than in me|Ambrose Bierce
-Happiness - an agreeable sensation arising from contemplating the misery of another|Ambrose Bierce
 Opportunity - A favorable occasion for grasping a disappointment|Ambrose Bierce
 
 Things are always different than what they might be... If you wait for them to change, you will never do anything.|Henry James (Portrait of a Lady) ++1
 And remember this, that if you've been hated, you've also been loved|Henry James (Portrait of a Lady)
 Perhaps it is better to wake up after all, even to suffer, rather than to remain a dupe to illusions all one's life.|Kate Chopin (The Awakening) ++1
-A certain light was beginning to dawn dimly within her, - the light which, showing the way, forbids it.|Kate Chopin (The Awakening)
-There are things in that paper that nobody knows but me, or ever will.|Charlotte Perkins Garland (The Yellow Wallpaper)
 If only we'd stop trying to be happy, we could have a pretty good time.|Edith Wharton
 As he became aware that she was listening closely, he grew still more eloquent in his descriptions of various happenings in his career.  It appeared that he was invincible in fights.|Stephen Crane (Maggie: a Girl of the Streets) ++2
-Her mother drank whiskey all Friday morning.  With lurid face and tossing hair she cursed and destroyed furniture all Friday afternoon. |Stephen Crane (Maggie: a Girl of the Streets) ++1
 The youth cringed as if discovered in a crime.  By heavens, the imbecile line had remained and become victors.  He could hear cheering.|Stephen Crane (The Red Badge of Courage) ++1
 You can't wait for inspiration. You have to go after it with a club|Jack London
 A bone to the dog is not charity.  Charity is the bone shared with the dog, when you are just as hungry as the dog.|Jack London
@@ -101,9 +94,7 @@ Hold fast to dreams, for if dreams die, life is a broken-winged bird that cannot
 There ain't no sin and there ain't no virtue.  There's just stuff people do.|John Steinbeck (The Grapes of Wrath)
 If you're in trouble, or hurt or need - go to the poor people.  They're the only ones that'll help - the only ones.|John Steinbeck (The Grapes of Wrath) ++1
 Up ahead they's a thousan' lives we might live, but when it comes it'll on'y be one.|John Steinbeck (The Grapes of Wrath)
-How can you frighten a man whose hunger is not only in his own cramped stomach but in the wretched bellies of his children?  You can't scare him -- he has known a fear beyond every other.|John Steinbeck (The Grapes of Wrath) ++2
 Our people are good people, our people are kind people. Pray God someday kind people won't all be poor.  Pray God someday a kid can eat. |John Steinbeck (The Grapes of Wrath) ++1
-The last clear definite function of men -- muscles aching to work, minds aching to create beyond the single need -- this is man. |John Steinbeck (The Grapes of Wrath)
 Puts a weight on ya.  Goin' out lookin' for somepin you know you ain't gonna find. |John Steinbeck (The Grapes of Wrath)
 The singing, the devotion, the poetry of the churches took a man out of his bleakness for a time, and so did the brothels.|John Steinbeck (East of Eden) ++1
 When you're a child you're the center of everything.  Everything happens for you.  Other people?  They're only ghosts furnished for you to talk to.|John Steinbeck (East of Eden) ++1
@@ -180,7 +171,6 @@ There is nothing in the world so easy to explain as failure - it is, after all, 
 So, then.  You want a story and I will tell you one. | Khaled Hosseini (And the Mountains Echoed)
 "I suspect the truth is that we are waiting, all of us, against insurmountable odds, for something extraordinary to happen to us." | Khaled Hosseini (And the Mountains Echoed) ++1
 It's a funny thing... but people mostly have it backward.  They think they live by what they want.  But really, what guides them is what they're afraid of.  What they don't want. | Khaled Hosseini (And the Mountains Echoed) ++1
-I don't know what this feather means, the story of it, but I know it means he was thinking of me.  For all these years.  He remembered me. | Khaled Hosseini (And the Mountains Echoed) ++1
 Out beyond ideas of wrongdoing and right doing, there is a field.  I'll meet you there.  | Khaled Hosseini, (And the Mountains Echoed)
 Pamela, even at a distance, was the voice of her conscience, but then it was very easy to have a conscience from a distance.  | Kate Atkinson, (Life After Life)
 "Hindsight's a wonderful thing," Klara said.  "If we all had it there would be no history to write about." | Kate Atkinson, (Life After Life)
@@ -191,9 +181,7 @@ In my old age, I see that life itself is often more fantastic and terrible than 
 
 Time is a slippery thing: lose hold of it once, and its string might sail out of your hands forever.   | Anthony Doerr (All the Light We Cannot See)
 To shut your eyes is to guess nothing of blindness | Anthony Doerr (All the Light We Cannot See)
-What the war did to dreamers. | Anthony Doerr (All the Light We Cannot See)
 It was hard to live through the early 1940s in France and not have the war be the center from which the rest of your life spiraled.| Anthony Doerr (All the Light We Cannot See) ++1
-Isn't life a kind of corruption?  A child is born, and the world sets in upon it.  Taking things from it, stuffing things into it. | Anthony Doerr (All the Light We Cannot See) ++1
 
 It is all very well planning what you will do in six months, what you will do in a year, but it's no good at all if you don't have a plan for tomorrow.  | Hilary Mantel (Wolf Hall)  ++1
 You learn nothing about men by snubbing them and crushing their pride. You must ask them what it is they can do in this world, that they alone can do.  | Hilary Mantel (Wolf Hall)  ++1
@@ -208,7 +196,6 @@ If you don't take it, I'm going to throw it away....  I don't want to know what 
 Alaska has long been a magnet for dreamers and misfits, people who think the unsullied enormity of the Last Frontier will patch all the holes in their lives. | Jon Krakauer (Into the Wild) ++1
 
 My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops? | David Mitchell (Cloud Atlas)
-Our lives are not our own.  We are bound to others, past and present, and by each crime and every kindness, we birth our future. | David Mitchell (Cloud Atlas)
 Books don't offer real escape, but they can stop a mind scratching itself raw. | David Mitchell (Cloud Atlas)
 I believe there is another world waiting for us.  A better world.  And I'll be waiting for you there. | David Mitchell (Cloud Atlas)
 Fantasy.  Lunacy.  All revolutions are, until they happen, then they are historical inevitabilities. | David Mitchell (Cloud Atlas)
@@ -217,13 +204,12 @@ Don't bemoan your misspent life quite yet.  Forgive me for flaunting my experien
 Sobering to think how one accursed night of baccarat can alter a man's social standing so irreversibly. | David Mitchell (Cloud Atlas)
 An abyss cannot be crossed in two steps. | David Mitchell (Cloud Atlas)
 Peace, though beloved of our Lord, is a cardinal virtue only if your neighbors share your conscience. | David Mitchell (Cloud Atlas)
-She has to lose her pre-Copernican view of a universe revolving around herself. | David Mitchell (Cloud Atlas)
 
 Success, after all, loves a witness, but failure can't exist without one. | Junot Díaz (The Brief Wondrous Life of Oscar Wao)
 She would be a new person, she vowed.  They said no matter how far a mule travels it can never come back a horse, but she would show them all. | Junot Díaz (The Brief Wondrous Life of Oscar Wao) ++1
 It's never the changes we want that change everything. | Junot Díaz (The Brief Wondrous Life of Oscar Wao)
 
-I am the sum total of everything that went before me, of all I have been seen done, of everything done-to-me....  I am anything that happens after I'm gone which would not have happened if I had not come. | Salman Rushdie (Midnight's Children)  ++1
+I am the sum total of everything that went before me, of all I have been seen done, of everything done to me....  I am anything that happens after I'm gone which would not have happened if I had not come. | Salman Rushdie (Midnight's Children)  ++1
 Children are the vessels into which adults pour their poison. | Salman Rushdie (Midnight's Children)
 To understand just one life, you have to swallow the world. | Salman Rushdie (Midnight's Children)
 I learned: the first lesson of my life: nobody can face the world with his eyes open all the time. | Salman Rushdie (Midnight's Children)
@@ -287,9 +273,6 @@ Even among men lacking all distinction he inevitably stood out as a man lacking 
 Now you've given them hope, and they're unhappy.  So the blame is all yours. | Joseph Heller (Catch-22)
 
 To live is so startling it leaves little time for anything else.|Emily Dickinson
-At length did cross an Albatross, Thorough the fog it came; as it had been a Christian soul, we hailed it in God's name.  |Samuel Taylor Coleridge ("The Rime of the Ancient Mariner") ++1
-And I had done a hellish thing, and it would work 'em woe.  For all averred, I had killed the bird that made the breeze to blow.  |Samuel Taylor Coleridge ("The Rime of the Ancient Mariner") ++1
-
 Turning and turning in the widening gyre the falcon cannot hear the falconer; Things fall apart, the center cannot hold; Mere anarchy is loosed upon the world.  |William Butler Yeats ("The Second Coming") ++1
 Little Lamb who made thee?  Dost thou know who made thee?|William Blake
 Tyger! Tyger! burning bright in the forests of the night, What immortal hand or eye could frame thy fearful symmetry? |William Blake (The Tyger)
@@ -360,10 +343,8 @@ C is for Cookie, that's good enough for me.|Cookie Monster
 
 I love my kids, but I wouldn't want them for friends.|Janet Sorensen
 No more tears now; I will think about revenge.|Mary Queen of Scots
-Cowards die many times before their deaths; The valiant never taste of death but once.|William Shakespeare (Julius Caesar)
 It is not necessary to advertise food to hungry people, fuel to cold people, or houses to the homeless.|J. K. Galbraith
 Give me you tired, your poor, Your huddled masses yearning to breathe free.|Emma Lazuras
-The true artist will let his wife starve, his children go barefoot, his mother drudge for his living at seventy, sooner than work at anything but his art.|George Bernard Shaw ++1
 A thing of beauty is a joy for ever: Its loveliness increases; it will never Pass into nothingness.|John Keats
 This is the way the world ends.  Not with a bang but a whimper.|T. S. Eliot ("The Hollow Men")
 They sicken of the calm that knew the storm.|Dorothy Parker
@@ -421,7 +402,6 @@ To share often and much; to leave the world a little better; to know even one li
 In the country of the blind the one-eyed man is king. |Desiderius Erasmus
 
 Any fool can criticize, condemn and complain and most fools do.|Benjamin Franklin
-For the want of a nail, the shoe was lost; for the want of a shoe the horse was lost; and for the want of a horse the rider was lost, being overtaken and slain by the enemy, all for the want of care about a horseshoe nail.|Benjamin Franklin ++1
 Better break your word than do worse in keeping it.|Thomas Fuller
 To understand the heart and mind of a person, look not at what he has already achieved, but at what he aspires to do.|Khalil Gibran
 Everything in the world may be endured, except continual prosperity.|Johann Wolfgang von Goethe
@@ -455,7 +435,6 @@ If the people have no bread, let them eat cake.|Marie Antoinette.
 The greatest trick the devil ever pulled was convincing the world he didn't exist.  And like that... he's gone |Verbal Kint (The Usual Suspects)
 The man who follows the crowd will usually get no further than the crowd.  The man who walks alone is likely to find himself in places no one has ever been.|Alan Ashley-Pitt ++1
 If Stupidity got us into this mess, then why can't it get us out?|Will Rogers
-Pray, n:. To ask that the laws of the universe be annulled in behalf of a single petitioner confessedly unworthy.|Ambrose Bierce
 The other day upon the stair, I met a man who wasn't there.  He wasn't there again today, I wish, I wish he'd go away. | Hughes Mearns (from Identity)
 Your worst days are never so bad that you are beyond the reach of God's grace.  Your best days are never so good that you are beyond the need of God's grace.|Jerry Bridges ++1
 
@@ -467,12 +446,10 @@ A word, my lady.  We are but poor, lost circus performers.  Is there a village n
 
 I used to dream about escaping my ordinary life, but my life was never ordinary.  I had simply failed to notice how extraordinary it was. | Ransom Riggs (Miss Peregrine's Home for Peculiar Children)
 We cling to our fairy tales until the price for believing in them becomes too high.  | Ransom Riggs (Miss Peregrine's Home for Peculiar Children)
-Was that what childhood was?  Things rushing by out a window, the trees connected by motion, going too fast for him to notice the consequences? | Tom Franklin (Crooked Letter, Crooked Letter)
 
 "Today, tomorrow," she said.  "A day is nothing.  A day is just a match you strike after the ten thousand matches before it have gone out." | Adam Johnson (The Orphan Master's Son)
 Where we are from... stories are factual.  If a farmer is declared a music virtuoso by the state, everyone had better start calling him maestro.  And secretly, he'd be wise to start practicing the piano. | Adam Johnson (The Orphan Master's Son) ++1
 A man who calls his kinsmen to a feast does not do so to save them from starving.  They all have food in their own homes....  We come together because it is good for kinsmen to do so. | Chinua Achebe (Things Fall Apart) ++1
-To fill the Lord's holy temple with an idolatrous crowd clamoring for signs was a folly of everlasting consequence.  Our Lord used the whip only once in His life -- to drive the crowd away from His church. | Chinua Achebe (Things Fall Apart) ++1
 "You do not know me," said Tortoise. "I am a changed man. I have learned that a man who makes trouble for others makes trouble for himself." | Chinua Achebe (Things Fall Apart)
 
 To go wrong in one's own way is better then to go right in someone else's. | Fyodor Dostoevsky (Crime and Punishment)
@@ -481,7 +458,7 @@ What do you think, would not one tiny crime be wiped out by thousands of good de
 The quiet makes no sense.  Nerve gas?  Overdoses?  Mass arrests? ...  What else could have stopped the unstoppable parties?  But it’s nothing like that.  Twenty years have passed. | Jennifer Egan (A Visit from the Goon Squad) ++1
 
 This was actually the main difference between twenty-one and fifty-one, he decided, the sheer volume of regret. | Emily St. John Mandel (Station Eleven)
-The difference was that they’d seen electricity, they’d seen everything, they’d watched a civilization collapse, and Shakespeare hadn’t.  In Shakespeare’s time the wonders of technology were still ahead, not behind them, and far less had been lost.  | Emily St. John Mandel (Station Eleven) ++1
+The difference was that they'd seen electricity, they'd seen everything, they'd watched a civilization collapse, and Shakespeare hadn't.  In Shakespeare's time the wonders of technology were still ahead, not behind them, and far less had been lost.  | Emily St. John Mandel (Station Eleven) ++1
 What and how much had I lost by trying to do only what was expected of me instead of what I myself had wished to do? | Ralph Ellison (Invisible Man)
 
 They seemed to come suddenly upon happiness as if they had surprised a butterfly in the winter woods. | Edith Wharton (Ethan Frome)
@@ -561,7 +538,7 @@ I realized then how difficult it is to separate the two.  The expectations that 
 
 You have to do what you think is the right thing, but just make sure it's the right thing in the long run, and not just for the moment. | John Knowles (A Separate Peace)
 
-I shut my eyes and all the world drops dead; I lift my eyes and all is born again. (I think I made you up inside my head). | Sylvia Plath (The Bell Jar)
+I shut my eyes and all the world drops dead; I lift my eyes and all is born again.  | Sylvia Plath (The Bell Jar)
 The trouble was, I had been inadequate all along, I simply hadn't thought about it.  | Sylvia Plath (The Bell Jar)
 The floor seemed wonderfully solid.  It was comforting to know I had fallen and could fall no farther. | Sylvia Plath (The Bell Jar)
 I took a deep breath and listened to the old brag of my heart.  I am, I am, I am. | Sylvia Plath (The Bell Jar)
@@ -574,7 +551,6 @@ The truly frightening flaw in humanity is our capacity for cruelty -- we all hav
 I don't care if you don't, I don't care if you don't, I don't care if you don't care, I don't care | Green Day (I Don't Care)
 I walk a lonely road, The only one that I have ever known.  Don't know where it goes, But it's home to me and I walk alone. | Green Day (Boulevard of Broken Dreams)
 I remember the face but I can't recall the name, Now I wonder how whatsername has been. | Green Day (Whatsername)
-Summer has come and passed, The innocent can never last, Wake me up when September ends  | Green Day (Wake Me Up When September Ends)
 
 When a person really desires something, all the universe conspires to help that person to realize his dream.  | Paulo Coelho (The Alchemist)
 It's the possibility of having a dream come true that makes life interesting.  | Paulo Coelho (The Alchemist)
@@ -584,9 +560,6 @@ Tell your heart that the fear of suffering is worse than the suffering itself.  
 Every blessing ignored becomes a curse.  | Paulo Coelho (The Alchemist)
 Most people see the world as a threatening place, and, because they do, the world turns out, indeed, to be a threatening place.  | Paulo Coelho (The Alchemist)
 
-It's too late.  He's already learned how not to drown. | Celeste Ng (Everything I Never Told You)
-For every action, there is an equal and opposite reaction.  One went up and the other went down.  One gained, the other lost.  One escaped, the other was trapped, forever. | Celeste Ng (Everything I Never Told You)
-
 Sometimes you need to scorch everything to the ground, and start over.  After the burning the soil is richer, and new things can grow.  People are like that, too.  They start over.  They find a way. | Celeste Ng (Little Fires Everywhere)
 Rules existed for a reason: if you followed them, you would succeed; if you didn't, you might burn the world to the ground. | Celeste Ng (Little Fires Everywhere)
 She had learned that when people were bent on doing something they believed was a good deed, it was usually impossible to dissuade them. | Celeste Ng (Little Fires Everywhere)
@@ -594,8 +567,6 @@ She had learned that when people were bent on doing something they believed was 
 And it made sense.  Who but a fringe character would try to impede the unimpeachable improvement of the world? | Dave Eggers (The Circle)
 So many of the things I invented I honestly did for fun, out of some perverse game of whether or not they'd work...  It was like setting up a guillotine in the public square.  You don't expect a thousand people to line up to put their heads in it. | Dave Eggers (The Circle) ++1
 Better to be at the bottom of a ladder you want to climb than in the middle of some ladder you don't, right? | Dave Eggers (The Circle)
-We are not meant to know everything, Mae.  Did you ever think that perhaps our minds are delicately calibrated between the known and the unknown?  That our souls need the mysteries of night and the clarity of day? | Dave Eggers (The Circle) ++1
-We all know the world is too big for us to be significant.  So all we have is the hope of being seen, or heard, even for a moment. | Dave Eggers (The Circle)
 The Pakistan fundraiser was thoroughly inspiring -- the event was able to amass 2.3 million smiles for the school. | Dave Eggers (The Circle)
 
 It was growing dark, and somehow the shadows made it feel as if all the trees had taken a collective step towards the house, edging in to shut out the sky. | Ruth Ware (In a Dark, Dark Wood)
@@ -637,14 +608,10 @@ What's the point of having a voice if you're gonna be silent in those moments yo
 Don't let them put words in your mouth.  God gave you a brain.  You don't need theirs. | Angie Thomas (The Hate U Give)
 
 We ask questions that we hope will give us the truth we want to hear.  The problem is, you can't choose your truths.  Truth has a habit of simply being the truth. | CJ Tudor (The Chalk Man)
-When you hear hoof beats, think horses, not zebras. | Chloe Benjamin (The Immortalists)
 
-And when she went out it seemed to her that she too had migrated, that everyone migrates, even if we stay in the same houses our whole lives, because we can't help it.  We are all migrants through time. | Mohsin Hamid (Exit West)
 No need to seize the last word (Lord Baelish); I’ll assume it was something clever. | Sansa Stark (Game of Thrones)
 
 Go lightly from the ledge, babe, Go lightly on the ground.  I'm not the one you want, babe, I will only let you down. | Body Dylan (It Ain't Me Babe)
-And take me disappearing through the smoke rings of my mind, Down the foggy ruins of time, Far past the frozen leaves, The haunted, frightened trees, Out to the windy beach, far from the twisted reach of crazy sorrow | Bob Dylan (Mr. Tambourine Man) ++1
-Yes, to dance beneath the diamond sky with one hand waving free, Silhouetted by the sea, Circled by the circus sands, With all memory and fate, Driven deep beneath the waves, Let me forget about today until tomorrow | Bob Dylan (Mr. Tambourine Man)  ++1
 Though I know that evening's empire has returned into sand, Vanished from my hand, Left me blindly here to stand, But still not sleeping.  | Bob Dylan (Mr. Tambourine Man)
 My weariness amazes me, I'm branded on my feet, I have no one to meet, And the ancient empty street's too dead for dreaming | Bob Dylan (Mr. Tambourine Man)
 But something is happening here and you don't know what it is, Do you, Mister Jones? | Bob Dylan (Ballad of a Thin Man)
@@ -663,7 +630,6 @@ Living is easy with eyes closed, misunderstanding all you see, It's getting hard
 Everybody's in despair, Every girl and boy, But when Quinn the Eskimo gets here, Everybody's gonna jump for joy  | Manfred Mann (Mighty Quinn)
 
 You can look at a picture for a week and never think of it again.  You can also look at a picture for a second and think of it all your life. | Donna Tartt (The Goldfinch)
-To understand the world at all, sometimes you could only focus on a tiny bit of it, look very hard at what was close to hand and make it stand in for the whole | Donna Tartt (The Goldfinch)
 We are so customed to disguise ourselves to others that, in the end, we become disguised to ourselves. | Donna Tartt (The Goldfinch)
 The sky was a rich, mindless, never-ending blue, like a promise of some ridiculous glory that wasn't really there.| Donna Tartt (The Goldfinch)
 But time makes you bolder, Even children get older, And I'm gettin' older, too | Fleetwood Mac (Landslide)
@@ -693,8 +659,6 @@ She let him finish her sentences for her for so long that now he starts them too
 This is my moral.  Trust what you dream.  Not what you think.  | David Mitchell (Number9Dream)
 You look for your meaning.  You find it, and at that moment, your meaning changes, and you have to start all over again.  | David Mitchell (Number9Dream)
 Do soldiers feel this, when they get back from a war?  The utter weirdness of utter normality.   | David Mitchell (Number9Dream)
-
-Mrs.Comb tightened her headscarf and wondered why human beings despise what is beautiful and good, and seek to destroy the things they need the most.  | David Mitchell (Number9Dream)
 
 As long as there was tea, there was England.|  Erik Larson (The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz)
 If we can't be safe, let us at least be comfortable. |  Erik Larson (The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz)
@@ -731,7 +695,7 @@ No sense worrying, she told herself again, as though it were a charm against wit
 A person's a person no matter how small.  | Dr. Seuss (Horton Hears a Who!)
 The moment you doubt whether you can fly, you cease for ever to be able to do it.  | J.M. Barrie (Peter Pan)
 No act of kindness, no matter how small, is ever wasted. | Aesop's Fables (The Lion and the Mouse)
-She had blue skin, and so did he.  He kept is hid and so did she.  They searched for blue their whole life through, then passed right by -- and never knew.  | Shel Silverstein (Everything On It) ++1
+She had blue skin, and so did he.  He kept his hid and so did she.  They searched for blue their whole life through, then passed right by -- and never knew.  | Shel Silverstein (Everything On It) ++1
 I think I can.  I think I can.  I think I can.  | Watty Piper (The Little Engine that Could)
 So... be your name Buxbaum or Bixby or Bray or Mordecai Ali Van Allen O’Shea, you’re off to Great Places!  Today is your day! Your mountain is waiting.  So... get on your way!  | Dr. Seuss (Oh, the Places You'll Go!) ++1
 There's no place like home.  | Frank Baum (The Wizard of Oz)
@@ -739,23 +703,24 @@ There is no living thing that is not afraid when it faces danger. True courage i
 When they've finished reading, Olivia's mother gives her a kiss and says, 'You know, you really wear me out. But I love you anyway.' And Olivia gives her a kiss back and says, 'I love you anyway too.'  | Ian Falconer (Olivia)  ++1
 A little magic can take you a long way. | Roald Dahl (James and the Giant Peach)
 All grown-ups were once children... but only few of them remember it.  | Antoine de Saint-Exupery (The Little Prince)
-You're mad, bonkers, completely off your head. But I'll tell you a secret.  All the best people are. | Lewis Carroll (Alice in Wonderland)
-Most of the really exciting things we do in our lives scare us to death. They wouldn't be exciting if they didn't. | Roald Dahl (Danny the Champion of the World)
+You're mad, bonkers, completely off your head.  But I'll tell you a secret.  All the best people are. | Lewis Carroll (Alice in Wonderland)
+Most of the really exciting things we do in our lives scare us to death.  They wouldn't be exciting if they didn't. | Roald Dahl (Danny the Champion of the World)
 Happiness can be found even in the darkest times, if one only remembers to turn on the light. | J.K. Rowling (Harry Potter and the Prisoner of Azkaban)
 A day without a friend is like a pot without a single drop of honey left inside. | A.A. Milne (Winnie the Pooh)
 I don't understand it any more than you do, but one thing I've learned is that you don't have to understand things for them to be. | Madeleine L'Engle (A Wrinkle in Time)
 It's no use going back to yesterday because I was a different person then. | Lewis Carroll (Alice's Adventures in Wonderland)
-You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what to know. You are the one who'll decide where to go. | Dr. Seuss (Oh! The Places You’ll Go) ++1
+You have brains in your head.  You have feet in your shoes.  You can steer yourself any direction you choose.  You're on your own.  And you know what to know.  You are the one who'll decide where to go. | Dr. Seuss (Oh! The Places You’ll Go) ++1
 
 Anyone who does anything to help a child in his life is a hero. | Mr. Rogers
-If you could only sense how important you are to the lives of those you meet; how important you can be to the people you may never even dream of. There is something of yourself that you leave at every meeting with another person. | Mr. Rogers ++1
+If you could only sense how important you are to the lives of those you meet; how important you can be to the people you may never even dream of.  There is something of yourself that you leave at every meeting with another person. | Mr. Rogers ++1
 When I was a boy and I would see scary things in the news, my mother would say to me, 'Look for the helpers. You will always find people who are helping.' | Mr. Rogers
-Taking care is one way to show your love. Another way is letting people take good care of you when you need it. | Mr. Rogers
-It's not so much what we have in this life that matters. It's what we do with what we have.
-It's really easy to fall into the trap of believing that what we do is more important than what we are. Of course, it's the opposite that's true: What we are ultimately determines what we do! | Mr. Rogers ++1
+Taking care is one way to show your love.  Another way is letting people take good care of you when you need it. | Mr. Rogers
+It's not so much what we have in this life that matters.  It's what we do with what we have.
+It's really easy to fall into the trap of believing that what we do is more important than what we are.  Of course, it's the opposite that's true: What we are ultimately determines what we do! | Mr. Rogers ++1
 Some days, doing 'the best we can' may still fall short of what we would like to be able to do, but life isn't perfect on any front and doing what we can with what we have is the most we should expect of ourselves or anyone else. | Mr. Rogers ++1
 As human beings, our job in life is to help people realize how rare and valuable each one of us really is, that each of us has something that no one else has -- or ever will have -- something inside that is unique to all time. | Mr. Rogers ++1
 How many times have you noticed that it's the little quiet moments in the midst of life that seem to give the rest extra-special meaning? | Mr. Rogers
 It's a beautiful day in this neighborhood, a beautiful day for a neighbor.  Would you be mine?  Could you be mine? | Mr. Rogers
 "Do you know why they call me the Count?  Because I love to count! Ah-hah-hah!"  | Count von Count
 "You'd be Oscar the Grouch, too, if you lived in a trash can!"  | Oscar the Grouch
+God bless us every one!  | Charles Dickens (A Christmas Carol)

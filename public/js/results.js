@@ -9,10 +9,11 @@ var numPauses = 0;
 const qIndexes = {};
 const basedelay = 8000;
 var currIndex = 0;
+var last_quote_ind = false;    // indicates if Ajax call returns the last quote of the series (i.e. dont call Ajax for more quotes)
 
 /* PAUSE functionality */
 $("div.invisible_middle").click(function () {
-	console.log("click Pause -- currIndex = ", currIndex);
+	// console.log("click Pause -- currIndex = ", currIndex);
 	if (!pauseThis) {
 		numPauses += 1;
 		$("#content .exitinfo").text(
@@ -28,7 +29,9 @@ $("div.invisible_middle").click(function () {
 	$("div.left_arrow").addClass("hideme");
 	$("div.right_arrow").addClass("hideme");
 	if (currIndex + 1 >= allQuoteFields.length) {
-		ajaxMoreQuotes();
+		if (last_quote_ind !== true) {
+			ajaxMoreQuotes();
+		}
 	} else {
 		currIndex += 1;
 		delay = 0; 
@@ -39,7 +42,7 @@ $("div.invisible_middle").click(function () {
 
 $("div.left_arrow").click(function () {
 	if (currIndex == 0) {
-		console.log("BEGIN of ARRAY");
+		// console.log("BEGIN of ARRAY");
 		return;
 	}
 	currIndex -= 1;
@@ -48,10 +51,12 @@ $("div.left_arrow").click(function () {
 });
 
 $("div.right_arrow").click(function () {
-	console.log("click RT2 -- currIndex = ", currIndex, allQuoteFields.length);
+	// console.log("click RT2 -- currIndex = ", currIndex, allQuoteFields.length);
 	if (currIndex + 1 >= allQuoteFields.length) {
-		console.log("END of ARRAY");
-		ajaxMoreQuotes('rt-click');
+		// console.log("END of ARRAY");
+		if (last_quote_ind !== true) {
+			ajaxMoreQuotes('rt-click');
+		}
 		return; 
 	}
 
@@ -85,17 +90,14 @@ function ajaxMoreQuotes(action = '') {
 		contentType: "application/json",
 		data: JSON.stringify({ endIdx: qIndexes.endIdx }),
 		success: function (response) {
-			// console.log("success", response.tenQuotes);
-			console.log("AJAX return -- response = ", response);
+			// console.log("AJAX return -- response = ", response);
 			allQuoteFields = [];
+			last_quote_ind = response.counters.lastQuote; 
 			addNewQuotes(response.tenQuotes);
 			if (action == 'rt-click') {
-				// currIndex += 1;
 				currIndex = response.counters.curr; 
-				console.log('AJAX More -- currIndex = ', currIndex); 
 				setQuote(currIndex);
 			} else {
-				// console.log("WW02 -- startLoop AFTER adding New Quotes");
 				startLoop(allQuoteFields, response.counters.curr, numPauses);
 			}
 		},
@@ -142,14 +144,17 @@ function mainLoop(ary, idx, pNum) {
 function waitFn(pNum) {
 	if (pauseThis) return;
 	if (pNum !== numPauses) return;
-	ajaxMoreQuotes();
+	if (last_quote_ind !== true) {
+		ajaxMoreQuotes();
+	}
 }
 
 /* set the main quote based on the index provided */
 function setQuote(idx, ary = allQuoteFields) {
-	console.log('setQuote', idx, allQuoteFields); 
+	// console.log('setQuote', idx, allQuoteFields); 
 	$("#quote_section .prequote").text(ary[idx]["prequote"]);
-	$("#quote_section .quote").text(ary[idx]["idx"] + " - " + ary[idx]["quote"]);
+	// $("#quote_section .quote").text(ary[idx]["idx"] + " - " + ary[idx]["quote"]);
+	$("#quote_section .quote").text(ary[idx]["quote"]);
 	$("#quote_section .author").text(ary[idx]["author"]);
 }
 
