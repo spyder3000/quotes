@@ -149,8 +149,8 @@ function readTextFile(str) {
 		tmp_file = "files/famous2023.txt";
 		if (str == "01") tmp_file = "files/onion2023.txt";
 		else if (str == "03") tmp_file = "files/humor2023.txt";
-		// else if (str == "05") tmp_file = "files/bible2023.txt";
-		else if (str == "05") tmp_file = "files/dummy.txt";
+		else if (str == "05") tmp_file = "files/bible2023.txt";
+		// else if (str == "05") tmp_file = "files/dummy.txt";
 		const dataBuffer = fs.readFileSync(tmp_file);
 		const dataArray = dataBuffer.toString("UTF8").split("\n");
 		return dataArray;
