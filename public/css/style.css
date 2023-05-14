@@ -85,6 +85,14 @@ html body {
 	font-size: 90%;
 	color: orange;
 	text-align: center;
+	display: block; 
+}
+.exitinfoMobile {
+	margin-top: 20px;
+	font-size: 90%;
+	color: orange;
+	text-align: center;
+	display: none; 
 }
 
 div.hidequoteline {
@@ -146,21 +154,23 @@ div.arrows {
 	position: absolute;
 	width: 100%;
 	padding: 0 2rem;
-	top: 49%;
+	top: 45%;
 }
 div.left_arrow {
 	float: left;
+	padding: 0.5em 1em 0.5em 0.2em; 
 }
 
 div.right_arrow {
 	float: right;
+	padding: 0.5em 0.2em 0.5em 1em; 
 }
 
 div.invisible_middle {
 	position: absolute;
 	bottom: 0%;
-	left: 10%;
-	width: 75%;
+	left: 20%;
+	width: 60%;
 	/* margin: 0 auto; */
 	height: 100%;
 }
@@ -177,18 +187,26 @@ div.pause_section {
 
 @media (max-width: 800px) {
 	#quote_section .quote {
-		font-size: 1.7rem;
+		font-size: 1.4rem;
 		color88: yellow;
 	}
 }
 @media (max-width: 800px) {
 	#quote_section .prequote {
-		font-size: 1.4rem;
+		font-size: 1.1rem;
 	}
 }
 @media (max-width: 800px) {
 	#quote_section .author {
-		font-size: 1.1rem;
+		font-size: 0.9rem;
 		color88: green;
+	}
+}
+@media (max-width: 800px) {
+	.exitinfo {
+		display: none;
+	}
+	.exitinfoMobile {
+		display: block; 
 	}
 }

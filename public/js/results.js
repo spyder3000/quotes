@@ -19,6 +19,9 @@ $("div.invisible_middle").click(function () {
 		$("#content .exitinfo").text(
 			"[ PAUSED -- click to Resume;  lt-arrow/rt-arrow for Prev/Next ]"
 		);
+		$("#content .exitinfoMobile").text(
+			"[ PAUSED -- click to Resume]"
+		);
 		$("div.left_arrow").removeClass("hideme");
 		$("div.right_arrow").removeClass("hideme");
 		pauseThis = !pauseThis;
@@ -26,6 +29,7 @@ $("div.invisible_middle").click(function () {
 	}
 
 	$("#content .exitinfo").text("");
+	$("#content .exitinfoMobile").text("");
 	$("div.left_arrow").addClass("hideme");
 	$("div.right_arrow").addClass("hideme");
 	if (currIndex + 1 >= allQuoteFields.length) {
@@ -38,6 +42,28 @@ $("div.invisible_middle").click(function () {
 		setTimeout(startLoop, delay, allQuoteFields, currIndex, numPauses);
 	}
 	pauseThis = !pauseThis;
+});
+
+$(document).keydown(function(e) {
+	if (pauseThis)  {
+		if(e.keyCode == 37) { // left
+			if (currIndex == 0) {
+				return;
+			}
+			currIndex -= 1;
+			setQuote(currIndex);	
+		}
+		else if(e.keyCode == 39) { // right
+			if (currIndex + 1 >= allQuoteFields.length) {
+				if (last_quote_ind !== true) {
+					ajaxMoreQuotes('rt-click');
+				}
+				return; 
+			}
+			currIndex += 1;
+			setQuote(currIndex);
+		}	
+	}
 });
 
 $("div.left_arrow").click(function () {
