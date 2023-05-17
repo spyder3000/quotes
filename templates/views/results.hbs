@@ -28,7 +28,19 @@
          
       <!--	<h1 class="web_title"><b>Quotes Generator</b><br><br></h1>    -->
          <span id="hidetitle"><input type="hidden" name="hidetitle" value="page2"></span>
-         <div class="hidequotelines">
+         <div class="hideimages hideme">
+            <span class="imagemode">{{imagemode}}</span>
+            {{#if tenImages}}
+            {{#each tenImages}}
+               <div class="hideimage">
+                  <h2 class="hideimagelink">{{imagelink}}</h2>
+                  <h2 class="hide_orig_idx">{{orig_idx}}</h2>
+                  <h2 class="hide_idx">{{idx}}</h2>
+               </div>
+            {{/each}}
+            {{/if}}		
+         </div>
+         <div class="hidequotelines hideme">
             {{#if tenQuotes}}
             {{#each tenQuotes}}
                <div class="hidequoteline">
@@ -47,21 +59,8 @@
             <span class="ctr_curr">{{counters.curr}}</span>
             <span class="ctr_end">{{counters.end}}</span>
             <span class="last_quote">{{counters.lastQuote}}</span>
-
-			begin: 0,
-			curr: 0,
-			end: currData.ctr,
-			lastQuote:"
          </div>
-         {{!-- <?php foreach ($qArray as $qline) : ?>  <!-- lists full array of quotes (all hidden) -->        
-            <span id="hidequoteline">
-               <h1><span class="hidequote"><?php echo $qline['quote'];  ?></span></h1>  
-               <h2 class="hideauthor"><?php echo $qline['author'];  ?></h2>
-               <h2 class="hideextra"><?php echo $qline['extra'];  ?></h2>
-            </span>
-         <?php endforeach; ?> --}}
 
-         {{!-- <span id="hideoption"><?php echo $qCategory;  ?> </span>		 --}}
          <h4 class="exitinfo center"></h4>
          <h4 class="exitinfoMobile center"></h4>
          <div class="arrows">
@@ -75,12 +74,16 @@
             <div class="pause_button fa fa-play-circle"></div>
          </div>
          
-         <section id="quote_section" class="center">	
+         <section id="quote_section" class="center {{quote_hide}}">	
             <p><span class = "prequote"></span>
             <span id="quote" class="quote"></span></p>
             <p class = "author"></p><br><br><br>
          </section>
-         
+
+         <section id="image_section" class="center {{image_hide}}">	
+            <img src="pics/20230404_200729.jpg" alt="misc image" width88="500" height88="500">
+         </section>
+
          <section id="hideexitbutton">
             <form id="exitform" action="./begin" method="post">
                <div id="exitbutton">

@@ -185,6 +185,22 @@ div.pause_section {
 	opacity: 0.8;
 }
 
+#image_section {
+	/* text-align: center; */
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	height: 800px; 
+}
+#image_section.hideme {
+	display: none; 
+}
+
+#image_section img {
+	max-width: 70%; 
+	height: 600px; 
+}
+
 @media (max-width: 800px) {
 	#quote_section .quote {
 		font-size: 1.4rem;

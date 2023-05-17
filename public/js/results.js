@@ -1,15 +1,21 @@
-// console.log("Results.js JavaScript file is loaded!");
-
 const content = document.querySelector("#content");
 const hideSection = document.querySelector("div.hidequotelines");
+const hideImagesSection = document.querySelector("div.hideimages");
+const imagemode_text = document.querySelector('span.imagemode'); 
+
+var imageMode = false; 
 var allQuotes;
 var allQuoteFields = [];
+var allImages;
+var allImageFields = [];
+var allItems; 		// will hold either quotes or images
+var allItemFields = [];   // will hold either quotes or images
 var pauseThis = false;
 var numPauses = 0;
 const qIndexes = {};
 const basedelay = 8000;
 var currIndex = 0;
-var last_quote_ind = false;    // indicates if Ajax call returns the last quote of the series (i.e. dont call Ajax for more quotes)
+var last_item_ind = false;    // indicates if Ajax call returns the last quote of the series (i.e. dont call Ajax for more quotes)
 
 /* PAUSE functionality */
 $("div.invisible_middle").click(function () {
@@ -32,14 +38,22 @@ $("div.invisible_middle").click(function () {
 	$("#content .exitinfoMobile").text("");
 	$("div.left_arrow").addClass("hideme");
 	$("div.right_arrow").addClass("hideme");
-	if (currIndex + 1 >= allQuoteFields.length) {
-		if (last_quote_ind !== true) {
-			ajaxMoreQuotes();
+	if (currIndex + 1 >= allItemFields.length) {
+		if (last_item_ind !== true) {
+			ajaxMoreItems();
 		}
+		else {
+			if (imageMode) {
+				currIndex = 0;
+				delay = 0; 
+				setTimeout(startLoop, delay, allItemFields, currIndex, numPauses);
+				// setItem(currIndex);				
+			} 
+		} 		
 	} else {
 		currIndex += 1;
 		delay = 0; 
-		setTimeout(startLoop, delay, allQuoteFields, currIndex, numPauses);
+		setTimeout(startLoop, delay, allItemFields, currIndex, numPauses);
 	}
 	pauseThis = !pauseThis;
 });
@@ -51,65 +65,79 @@ $(document).keydown(function(e) {
 				return;
 			}
 			currIndex -= 1;
-			setQuote(currIndex);	
+			setItem(currIndex);	
 		}
 		else if(e.keyCode == 39) { // right
-			if (currIndex + 1 >= allQuoteFields.length) {
-				if (last_quote_ind !== true) {
-					ajaxMoreQuotes('rt-click');
+			if (currIndex + 1 >= allItemFields.length) {
+				if (last_item_ind !== true) {
+					ajaxMoreItems('rt-click');
 				}
+				else {
+					if (imageMode) {
+						currIndex = 0;
+						setItem(currIndex);				
+					} 
+				} 
 				return; 
 			}
 			currIndex += 1;
-			setQuote(currIndex);
+			setItem(currIndex);
 		}	
 	}
 });
 
 $("div.left_arrow").click(function () {
 	if (currIndex == 0) {
-		// console.log("BEGIN of ARRAY");
-		return;
+		return;	  // Begin of Array -- do nothing
 	}
 	currIndex -= 1;
-	// console.log("click Left2 , currIndex = ", currIndex);
-	setQuote(currIndex);
+	setItem(currIndex);
 });
 
 $("div.right_arrow").click(function () {
-	// console.log("click RT2 -- currIndex = ", currIndex, allQuoteFields.length);
-	if (currIndex + 1 >= allQuoteFields.length) {
+	if (currIndex + 1 >= allItemFields.length) {
 		// console.log("END of ARRAY");
-		if (last_quote_ind !== true) {
-			ajaxMoreQuotes('rt-click');
+		if (last_item_ind !== true) {
+			ajaxMoreItems('rt-click');
 		}
+		else {
+			if (imageMode) {
+				currIndex = 0;
+				setItem(currIndex);				
+			} 
+		} 
 		return; 
 	}
-
+	// Get next item in array
 	currIndex += 1;
-	setQuote(currIndex);
+	setItem(currIndex);
 });
 
 /* START of process -- populates global array;  displays first quote;  calls Start of Loop  */
 $(document).ready(function () {
-	setQuoteArray(); // populates allQuoteFields array
+	// console.log('imagemode_text = ', imagemode_text.innerText); 
+	if (imagemode_text.innerText == 'imagemode') {
+		imageMode = true;
+		last_item_ind = true; 
+	}
+
+	setItemArray(); // populates allItemFields array
 
 	// set various counters and indexes
-	qIndexes.startIdx = parseInt(allQuoteFields[0].idx);
+	qIndexes.startIdx = parseInt(allItemFields[0].idx);
 	qIndexes.endIdx =
-		parseInt(allQuoteFields[allQuoteFields.length - 1].idx) + qIndexes.startIdx;
-	qIndexes.maxCtr = allQuoteFields.length - 1;
+		parseInt(allItemFields[allItemFields.length - 1].idx) + qIndexes.startIdx;
+	qIndexes.maxCtr = allItemFields.length - 1;
 
 	// Populate first quote shown
-	setQuote(qIndexes.startIdx);
+	setItem(qIndexes.startIdx);
 
 	// special processing for 1st quote
-	var delay = basedelay + parseInt(allQuoteFields[0].extra);
-	// console.log("WW01 -- startLoop called from Ready");
-	setTimeout(startLoop, delay, allQuoteFields, 1, numPauses); // start the loop with the 2nd item (index 1)
+	var delay = basedelay + (parseInt(allItemFields[0].extra) || 0);
+	setTimeout(startLoop, delay, allItemFields, 1, numPauses); // start the loop with the 2nd item (index 1)
 });
 
-function ajaxMoreQuotes(action = '') {
+function ajaxMoreItems(action = '') {
 	$.ajax({
 		url: "/next",
 		type: "POST",
@@ -117,14 +145,17 @@ function ajaxMoreQuotes(action = '') {
 		data: JSON.stringify({ endIdx: qIndexes.endIdx }),
 		success: function (response) {
 			// console.log("AJAX return -- response = ", response);
-			allQuoteFields = [];
-			last_quote_ind = response.counters.lastQuote; 
-			addNewQuotes(response.tenQuotes);
+			allItemFields = [];
+			last_item_ind = response.counters.lastQuote; 
+
+			if (imageMode) addNewImages(response.tenImages);
+			else addNewQuotes(response.tenQuotes);
+		
 			if (action == 'rt-click') {
 				currIndex = response.counters.curr; 
-				setQuote(currIndex);
+				setItem(currIndex);
 			} else {
-				startLoop(allQuoteFields, response.counters.curr, numPauses);
+				startLoop(allItemFields, response.counters.curr, numPauses);
 			}
 		},
 	});
@@ -132,6 +163,7 @@ function ajaxMoreQuotes(action = '') {
 
 /* Main Loop;  Sets indexes & starts Quotes Loop;  Fade effects & delays;  determines if Ajax for more quotes is needed */
 function startLoop(ary, startIdx = 0, pNum) {
+	// console.log('startLoop -- ary = ', ary); 
 	// Logic here (& elsewhere) prevents loop from continuing or if this was called prior to pause button event
 	if (pauseThis) return;
 	if (pNum !== numPauses) return;
@@ -148,13 +180,12 @@ function mainLoop(ary, idx, pNum) {
 	$("#quote_section .quote").fadeOut(1000);
 	$("#quote_section .author").fadeOut(1000, function () {
 		currIndex = idx;
-		setQuote(idx, ary);
+		setItem(idx, ary);
 		$("#quote_section *").fadeIn(100);
 
 		// your logic here, where you can update the delay
-		delay = basedelay + parseInt(ary[idx].extra);
-		// console.log( "delay", delay, "; idx = ", idx, "; ary length = ",
-		// 	ary.length, "; quote index = ", ary[idx].idx, ary[idx].quote );
+		delay = basedelay + (parseInt(ary[idx].extra) || 0);
+		// console.log('mainloop delay = ', delay); 
 		idx += 1;
 
 		if (pauseThis) return;
@@ -170,38 +201,66 @@ function mainLoop(ary, idx, pNum) {
 function waitFn(pNum) {
 	if (pauseThis) return;
 	if (pNum !== numPauses) return;
-	if (last_quote_ind !== true) {
-		ajaxMoreQuotes();
-	}
+	if (last_item_ind !== true) {
+		ajaxMoreItems();
+	} 
+	else {
+		if (imageMode) {
+			currIndex = 0;
+			startLoop(allItemFields, currIndex, numPauses);
+		} 
+	} 
 }
 
 /* set the main quote based on the index provided */
-function setQuote(idx, ary = allQuoteFields) {
-	// console.log('setQuote', idx, allQuoteFields); 
-	$("#quote_section .prequote").text(ary[idx]["prequote"]);
-	// $("#quote_section .quote").text(ary[idx]["idx"] + " - " + ary[idx]["quote"]);
-	$("#quote_section .quote").text(ary[idx]["quote"]);
-	$("#quote_section .author").text(ary[idx]["author"]);
+function setItem(idx, ary = allItemFields) {
+	if (imageMode) {
+		// console.log('Update image -- idx = ', idx, "; pics/" + ary[idx]["imagelink"])
+		$("#image_section img").attr("src", "pics/" + ary[idx]["imagelink"]);
+	} else {
+		$("#quote_section .prequote").text(ary[idx]["prequote"]);
+		// $("#quote_section .quote").text(ary[idx]["idx"] + " - " + ary[idx]["quote"]);
+		$("#quote_section .quote").text(ary[idx]["quote"]);
+		$("#quote_section .author").text(ary[idx]["author"]);
+	}
 }
 
-/* From DOM hidden quotes, populate global allQuoteFields array w/ relevant info */
-function setQuoteArray() {
-	allQuotes = hideSection.querySelectorAll("div.hidequoteline");
-	for (i = 0; i < allQuotes.length; i++) {
-		allQuoteFields[i] = {
-			prequote: allQuotes[i].querySelector("h2.hideprequote").innerText,
-			quote: allQuotes[i].querySelector("span.hidequote").innerText,
-			author: allQuotes[i].querySelector("h2.hideauthor").innerText,
-			extra: allQuotes[i].querySelector("h2.hideextra").innerText,
-			orig_idx: allQuotes[i].querySelector("h2.hide_orig_idx").innerText,
-			idx: allQuotes[i].querySelector("h2.hide_idx").innerText,
-		};
+/* From DOM hidden quotes, populate global allItemFields array w/ relevant info */
+function setItemArray() {
+	// console.log('setItemArray imageMode = ', imageMode); 
+	if (imageMode) {
+		allImages = hideImagesSection.querySelectorAll("div.hideimage");
+		allImageFields = []; 
+		for (i = 0; i < allImages.length; i++) {
+			allImageFields[i] = {
+				imagelink: allImages[i].querySelector("h2.hideimagelink").innerText,
+				orig_idx: allImages[i].querySelector("h2.hide_orig_idx").innerText,
+				idx: allImages[i].querySelector("h2.hide_idx").innerText,
+			};
+			allItemFields = allImageFields; 
+		}	
+		// console.log('AAA allImages = ', allImages); 
+		// console.log('BBB allImageFields = ', allImageFields); 
+	} else {
+		allQuotes = hideSection.querySelectorAll("div.hidequoteline");
+		allQuoteFields = []; 
+		for (i = 0; i < allQuotes.length; i++) {
+			allQuoteFields[i] = {
+				prequote: allQuotes[i].querySelector("h2.hideprequote").innerText,
+				quote: allQuotes[i].querySelector("span.hidequote").innerText,
+				author: allQuotes[i].querySelector("h2.hideauthor").innerText,
+				extra: allQuotes[i].querySelector("h2.hideextra").innerText,
+				orig_idx: allQuotes[i].querySelector("h2.hide_orig_idx").innerText,
+				idx: allQuotes[i].querySelector("h2.hide_idx").innerText,
+			};
+			allItemFields = allQuoteFields; 
+		}
 	}
+
 }
 
 /* After AJAX call, populate the Hidden Quotes DOM section w/ data from array */
 function addNewQuotes(dat) {
-	// console.log("addNewQuotes", dat);
 	let tmp_cont = document.querySelector("div.hidequotelines");
 	let copy_div = copyQuotelineDiv(tmp_cont);
 
@@ -216,7 +275,7 @@ function addNewQuotes(dat) {
 		new_div.querySelector(".hide_idx").innerText = dat[i].idx;
 		tmp_cont.append(new_div);
 	}
-	setQuoteArray();
+	setItemArray();
 }
 
 /* Populate a single Hidden Quote Line in DOM (for use later) */
