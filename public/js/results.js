@@ -30,14 +30,19 @@ $("div.invisible_middle").click(function () {
 		);
 		$("div.left_arrow").removeClass("hideme");
 		$("div.right_arrow").removeClass("hideme");
+		$("#content .exitinfoMobile").removeClass("notvisible"); 
+		$("#content .exitinfo").removeClass("notvisible"); 	
 		pauseThis = !pauseThis;
 		return;
 	}
 
-	$("#content .exitinfo").text("");
-	$("#content .exitinfoMobile").text("");
+	$("#content .exitinfo").text(" ");
+	$("#content .exitinfoMobile").text(" ");
 	$("div.left_arrow").addClass("hideme");
 	$("div.right_arrow").addClass("hideme");
+	$("#content .exitinfoMobile").addClass("notvisible"); 
+	$("#content .exitinfo").addClass("notvisible"); 
+
 	if (currIndex + 1 >= allItemFields.length) {
 		if (last_item_ind !== true) {
 			ajaxMoreItems();

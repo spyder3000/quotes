@@ -4,6 +4,9 @@
 .hideme {
 	display: none;
 }
+.notvisible {
+	visibility: hidden; 
+}
 
 .web_title {
 	color: #191970;
@@ -81,18 +84,23 @@ html body {
 }
 
 .exitinfo {
+	height: 45px; 
 	margin-top: 20px;
 	font-size: 90%;
 	color: orange;
 	text-align: center;
 	display: block; 
+	visibility: visible;
 }
 .exitinfoMobile {
-	margin-top: 20px;
+	height: 15px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	font-size: 90%;
 	color: orange;
 	text-align: center;
-	display: none; 
+	display: none;
+	visibility: visible; 
 }
 
 div.hidequoteline {
@@ -197,8 +205,39 @@ div.pause_section {
 }
 
 #image_section img {
-	max-width: 70%; 
+	max-width: 90%; 
 	height: 600px; 
+}
+
+@media (max-width: 1200px) {
+	#image_section {
+		/* text-align: center; */
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+		height: 88vh; 
+	}
+
+	#image_section img {
+		max-width: 90%; 
+		/* height: 600px;  */
+		height: auto;
+	}
+}
+
+@media (max-width: 800px) {
+	#image_section {
+		/* text-align: center; */
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+		height: 88vh; 
+		width: 100%; 
+	}
+	#image_section img {
+		max-width: 98%; 
+		height: auto;
+	}
 }
 
 @media (max-width: 800px) {
