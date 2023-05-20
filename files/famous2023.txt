@@ -494,7 +494,7 @@ Truth is, there aren't any grown-ups.  Not one, in the whole wide world.| Neil G
 
 I never meant to cause you any sorrow, I never meant to cause you any pain.  I only wanted one time to see you laughing.  I only want to see you laughing in the purple rain.  | Prince (Purple Rain)
 
-Being broke didn’t disturb me in the least.  I had started with nothing, and if I now found myself with nothing, I was at least even.  Actually, I was much better than even: I had had a wonderful time. | Erik Larson (The Devil in the White City) ++1
+Being broke didn't disturb me in the least.  I had started with nothing, and if I now found myself with nothing, I was at least even.  Actually, I was much better than even: I had had a wonderful time. | Erik Larson (The Devil in the White City) ++1
 "I may be an idiot," he said gravely, "but I would never eat a hamburger cooked by a clown." | Anthony Marra (A Constellation of Vital Phenomena)
 
 Weekends don't count unless you spend them doing something completely pointless. | (from Calvin & Hobbes)
@@ -608,7 +608,7 @@ Don't let them put words in your mouth.  God gave you a brain.  You don't need t
 
 We ask questions that we hope will give us the truth we want to hear.  The problem is, you can't choose your truths.  Truth has a habit of simply being the truth. | CJ Tudor (The Chalk Man)
 
-No need to seize the last word (Lord Baelish); I’ll assume it was something clever. | Sansa Stark (Game of Thrones)
+No need to seize the last word Lord Baelish; I'll assume it was something clever. | Sansa Stark (Game of Thrones)
 
 Go lightly from the ledge, babe, Go lightly on the ground.  I'm not the one you want, babe, I will only let you down. | Body Dylan (It Ain't Me Babe)
 Though I know that evening's empire has returned into sand, Vanished from my hand, Left me blindly here to stand, But still not sleeping.  | Bob Dylan (Mr. Tambourine Man)
@@ -714,14 +714,14 @@ Anyone who does anything to help a child in his life is a hero. | Mr. Rogers
 If you could only sense how important you are to the lives of those you meet; how important you can be to the people you may never even dream of.  There is something of yourself that you leave at every meeting with another person. | Mr. Rogers ++1
 When I was a boy and I would see scary things in the news, my mother would say to me, 'Look for the helpers. You will always find people who are helping.' | Mr. Rogers
 Taking care is one way to show your love.  Another way is letting people take good care of you when you need it. | Mr. Rogers
-It's not so much what we have in this life that matters.  It's what we do with what we have.
+It's not so much what we have in this life that matters.  It's what we do with what we have. | Mr. Rogers
 It's really easy to fall into the trap of believing that what we do is more important than what we are.  Of course, it's the opposite that's true: What we are ultimately determines what we do! | Mr. Rogers ++1
 Some days, doing 'the best we can' may still fall short of what we would like to be able to do, but life isn't perfect on any front and doing what we can with what we have is the most we should expect of ourselves or anyone else. | Mr. Rogers ++1
 As human beings, our job in life is to help people realize how rare and valuable each one of us really is, that each of us has something that no one else has -- or ever will have -- something inside that is unique to all time. | Mr. Rogers ++1
 How many times have you noticed that it's the little quiet moments in the midst of life that seem to give the rest extra-special meaning? | Mr. Rogers
 It's a beautiful day in this neighborhood, a beautiful day for a neighbor.  Would you be mine?  Could you be mine? | Mr. Rogers
-"Do you know why they call me the Count?  Because I love to count! Ah-hah-hah!"  | Count von Count
-"You'd be Oscar the Grouch, too, if you lived in a trash can!"  | Oscar the Grouch
+Do you know why they call me the Count?  Because I love to count! Ah-hah-hah!  | Count von Count
+You'd be Oscar the Grouch, too, if you lived in a trash can!  | Oscar the Grouch
 God bless us every one!  | Charles Dickens (A Christmas Carol)
 
 Be yourself; everyone else is already taken. | Anonymous
@@ -734,7 +734,7 @@ Fairy tales are more than true: not because they tell us that dragons exist, but
 Lack of direction, not lack of time, is the problem. We all have twenty-four hour days. | Zig Ziglar
 Opportunity is often missed because it is dressed in overalls and looks like work. | Anonymous
 You miss 100% of the shots you don't take. | Wayne Gretzky
-There are few things more liberating in this life than having your worst fear realized.  | Conan O’Brien
+There are few things more liberating in this life than having your worst fear realized.  | Conan O'Brien
 The only place where success comes before work is in the dictionary.  | Anonymous
 Friendship isn't a big thing -- it's a million little things. |  Paulo Coelho
 It is better to have loved and lost than never to have loved at all. |  Alfred Lord Tennyson
@@ -747,7 +747,7 @@ It's hard to beat a person who never gives up.  | Babe Ruth
 Everything you can imagine is real. | Pablo Picasso
 When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us. | Helen Keller ++1
 It was a Monday and they walked on a tightrope to the sun.  | Marcus Zusak
-If you're offered a seat on a rocket ship, don’t ask what seat! Just get on. | Sheryl Sandberg
+If you're offered a seat on a rocket ship, don’t ask what seat!  Just get on. | Sheryl Sandberg
 If you hear a voice within you say, 'You cannot paint,' then by all means paint, and that voice will be silenced. | Vincent Van Gogh
 The miracle is not that we do this work, but that we are happy to do it. | Mother Teresa
 At any given moment you have the power to say: this is not how the story is going to end.  | Unknown
@@ -756,9 +756,8 @@ Make each day your masterpiece. | John Wooden
 Doubt kills more dreams than failure ever will.  | Suzy Kassem
 You don't need to see the whole staircase, just take the first step. | Martin Luther King Jr.
 You can't go back and change the beginning, but you can start where you are and change the ending. | C.S. Lewis
-Learn to light a candle in the darkest moments of someone's life. Be the light that helps others see | Roy Bennett (The Light in the Heart)
-We're on the brink of adventure, children. Don't spoil it with questions.  | Mary Poppins
-Life moves pretty fast.  You don't stop and look around once in a while, you could miss it.  | Ferris Bueller's Day Off
+Learn to light a candle in the darkest moments of someone's life.  Be the light that helps others see | Roy Bennett (The Light in the Heart)
+We're on the brink of adventure, children.  Don't spoil it with questions.  | Mary Poppins
 If you fall -- I'll be there.  | Floor
 If you judge people, you have no time to love them.  | Mother Teresa
 You'll never get bored when you try something new.  There's really no limit to what you can do. | Dr. Seuss
