@@ -13,7 +13,7 @@ var allItemFields = [];   // will hold either quotes or images
 var pauseThis = false;
 var numPauses = 0;
 const qIndexes = {};
-const basedelay = 8000;
+var basedelay = 8000;
 var currIndex = 0;
 var last_item_ind = false;    // indicates if Ajax call returns the last quote of the series (i.e. dont call Ajax for more quotes)
 
@@ -124,6 +124,7 @@ $(document).ready(function () {
 	if (imagemode_text.innerText == 'imagemode') {
 		imageMode = true;
 		last_item_ind = true; 
+		basedelay = 5000; 
 	}
 
 	setItemArray(); // populates allItemFields array

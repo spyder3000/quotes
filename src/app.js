@@ -40,7 +40,7 @@ app.get("", (req, res) => {
 app.post("/begin", (req, res) => {
 	// console.log("POST /begin", req.body); // '01' Onion, '03' Humor , '04' Literary, '05 Bible
 	if (req.body.quoteCategory == '10') {
-		console.log('Images!!'); 
+		// console.log('Images!!'); 
 		currType = 'images'; 
 		getPicInfo(res); 
 		return; 
@@ -94,7 +94,7 @@ app.post("/next", (req, res) => {
 });
 
 function getPicInfo(res) {
-	console.log('dirname = ', __dirname); 
+	// console.log('dirname = ', __dirname); 
 	// const fullPath = path.join(__dirname, 'pics')
 	const fullPath = __dirname + '/../public/pics';  
 	fs.readdir(fullPath, 
